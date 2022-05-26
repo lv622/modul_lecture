@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            /* 초기화 */
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu_contanier {
+            display: flex;
+
+            background-color: #eee;
+
+            width: 1025px;
+            height: inherit;
+            top: 90px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sub_nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+
+        .sub_nav a {
+            padding: 4px 12px 4px 12px;
+
+            color: #444;
+            font-size: 13px;
+        }
+
+        .sub_nav div ul li {
+            padding-top: 8px;
+
+            color: #444;
+            font-size: 13px;
+
+            list-style: none;
+
+            width: 208px;
+        }
+
+        .memu li a {
+            width: 208px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sub_nav">
+        <div>
+            <ul class="column">
+                <div class="memu">
+                    <li>
+                        <a href="#">
+                            <img src="fc-category-nav-2021-O2.jpg" style="width: 205px;"><br/>
+                            <span style="padding-left: 30px;">Vacuum cleaners</span>
+                        </a>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">Cordless stick vacuums</a></li>
+                            <li><a href="#">Upright vacuums</a></li>
+                            <li><a href="#">Canister vacuums</a></li>
+                            <li><a href="#">Hardwood floor vacuums</a></li>
+                            <li><a href="#">Vacuum stands, fools and accessories</a></li>
+                            <li><a href="#">Help me choose</a></li>
+                            <li><a href="#">Shop all vacuums</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+            </ul>
+        </div>
+
+        <div class="div_w">
+            <ul class="column">
+                <li>
+                    <a href="#">
+                        <img src="fc-category-nav-2021-O2.jpg" style="width: 205px;"><br/>
+                        <span>Vacuum cleaners</span>
+                    </a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">Cordless stick vacuums</a></li>
+                        <li><a href="#">Upright vacuums</a></li>
+                        <li><a href="#">Canister vacuums</a></li>
+                        <li><a href="#">Hardwood floor vacuums</a></li>
+                        <li><a href="#">Vacuum stands, fools and accessories</a></li>
+                        <li><a href="#">Help me choose</a></li>
+                        <li><a href="#">Shop all vacuums</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="div_w">
+            <ul class="column">
+                <li>
+                    <a href="#">
+                        <img src="fc-category-nav-2021-O2.jpg" style="width: 205px;"><br/>
+                        <span>Vacuum cleaners</span>
+                    </a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">Cordless stick vacuums</a></li>
+                        <li><a href="#">Upright vacuums</a></li>
+                        <li><a href="#">Canister vacuums</a></li>
+                        <li><a href="#">Hardwood floor vacuums</a></li>
+                        <li><a href="#">Vacuum stands, fools and accessories</a></li>
+                        <li><a href="#">Help me choose</a></li>
+                        <li><a href="#">Shop all vacuums</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="div_w">
+            <ul class="column">
+                <li>
+                    <a href="#">
+                        <img src="fc-category-nav-2021-O2.jpg" style="width: 205px;"><br/>
+                        <span>Vacuum cleaners</span>
+                    </a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">Cordless stick vacuums</a></li>
+                        <li><a href="#">Upright vacuums</a></li>
+                        <li><a href="#">Canister vacuums</a></li>
+                        <li><a href="#">Hardwood floor vacuums</a></li>
+                        <li><a href="#">Vacuum stands, fools and accessories</a></li>
+                        <li><a href="#">Help me choose</a></li>
+                        <li><a href="#">Shop all vacuums</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <article class="menu_contanier">
+        <ul>
+            <div class="row">
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="fc-category-nav-2021-O2.jpg">
+                            <figcaption>Vacuum cleaners</figcaption>
+                        </a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="">Cordless stick vacuums</a></li>
+                            <li><a href="">Upright vacuums</a></li>
+                            <li><a href="">Canister vacuums</a></li>
+                            <li><a href="">Hardwood floor vacuums</a></li>
+                            <li><a href="">Vacuum stands, fools and accessories</a></li>
+                            <li><a href="">Help me choose</a></li>
+                            <li><a href="">Shop all vacuums</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <div class="row">
+                <li class="menu_list">
+                    <div>
+                        <a href="#">
+                            <img src="fc-category-nav-2021-O2.jpg">
+                            <figcaption>Vacuum cleaners</figcaption>
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="">Cordless stick vacuums</a></li>
+                        <li><a href="">Upright vacuums</a></li>
+                        <li><a href="">Canister vacuums</a></li>
+                        <li><a href="">Hardwood floor vacuums</a></li>
+                        <li><a href="">Vacuum stands, fools and accessories</a></li>
+                        <li><a href="">Help me choose</a></li>
+                        <li><a href="">Shop all vacuums</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </article> -->
+</body>
+</html>

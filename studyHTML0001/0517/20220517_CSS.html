@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        /* h1 {
+            color: red;
+            background-color: orange;
+        } */
+
+        /* #header {
+            width: 800px; margin: 0 auto;
+            background:red;
+        }
+
+        #warp {
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #aside {
+            width: 200px; float: left;
+            background:blue;
+        }
+
+        #content {
+            width: 600px; float: left;
+            background: green;
+        } */
+
+        /* #header h1 { color: red;}
+
+        #section h1 { color: orange;} */
+    
+        #header > h1 { color: red;}
+
+        #section > h1 {color:orange;}
+
+        #red {color: red;}
+        #yellow {color: orange;}
+        #green {color: green;}
+
+    </style>
+</head>
+<body>
+    <!-- <h1>CSS3 Selector Basic</h1> -->
+
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptate provident id cupiditate nulla, quod delectus ipsa fugiat. Ad deleniti accusantium, culpa officia hic aspernatur delectus eos soluta dicta perferendis.</p>
+    </div>
+
+    <div>
+        <span id="red">O</span>
+        <span>O</span>
+        <span>O</span>
+    </div>
+
+    <div>
+        <span>O</span>
+        <span id="yellow">O</span>
+        <span>O</span>
+    </div>
+
+    <div>
+        <span>O</span>
+        <span>O</span>
+        <span id="green">O</span>
+    </div>
+
+    <div>
+        <span id="red">O</span>
+        <span>O</span>
+        <span>O</span>
+    </div>
+
+    <div>
+        <span>O</span>
+        <span id="yellow">O</span>
+        <span>O</span>
+    </div>
+</body>
+</html>

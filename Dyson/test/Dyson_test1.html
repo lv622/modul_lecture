@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyson vacuum cleaners, hair dryers and stylers, fans, humidifiers, hand dryers and lighting _ Dyson</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+            list-style-type: none;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+
+            background-color: black;
+        }
+
+        .header {
+            width: 1296px;
+            margin: 0 112px 0 112px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: left;
+            align-items: flex-start;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 맨 위 소메뉴 */
+        .sub_nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+
+        .sub_nav a {
+            padding: 4px 12px 4px 12px;
+
+            color: #444;
+            font-size: 13px;
+        }
+
+
+        /* 메인메뉴 */
+        .main_nav .row {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: auto;
+        }
+
+        .main_menu img {
+            /* 확장 아이콘 크기 */
+            width: 15px;
+            height: 15px;
+        }
+
+        .main_menu {
+            display: flex;
+            /* flex-flow: column nowrap; */
+
+            height: 65px;
+            align-items: center;
+        }
+
+        .main_list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: left;
+            width: 635px;
+            height: inherit;
+            list-style: none;
+        }
+
+        .main_list>li>a {
+            display: flex;
+            align-items: center;
+
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px 12px;
+        }
+
+        .main_list>li>a:hover {
+            opacity: 0.5;
+        }
+
+        /* 펼쳐지는 메뉴 */
+        .sub-menu-contanier {
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            top: 90px;
+
+            z-index: 1;
+
+            color: white;
+        }
+
+        .sub-menu {
+            display: flex;
+            flex-direction: row;
+
+            font-size: 16px;
+
+            width: auto;
+            background: #333333;
+            color: white;
+
+            position: absolute;
+            top: 90px;
+            left: 0;
+        }
+
+        .sub-menu {
+            width: 90%;
+            padding: 0 14px 0 14px;
+
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .sub-menu img {
+            width: 100%;
+        }
+
+        .sub-menu ul {
+            padding: 0 0 24px;
+        }
+
+        .sub-menu ul li {
+            padding-top: 8px;
+        }
+
+        .sub-menu ul:nth-child(1) {
+            border-bottom: 3px solid white;
+            padding: 10px 0 12px;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+
+        /* 검색버튼 */
+        .search {
+            padding: 0 24px 0 24px;
+        }
+
+        .search_btn {
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 30px;
+            width: 100%;
+
+            border: 0px;
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <nav class="sub_nav">
+            <a href="https://www.dyson.com/demo-stores">find a store</a>
+            <a href="https://www.dyson.com/newsroom">Newsroom</a>
+            <a href="https://www.dyson.com/registration">Register machine</a>
+        </nav>
+
+        <nav class="main_nav">
+            <div class="row">
+                <div>
+                    <a href="Dyson_site.html"><img
+                            src="https://www.dyson.com/etc.clientlibs/dyson/clientlibs/clientlib-main/resources/images/dyson-logo.svg"
+                            width="74px" height="28px"></a>
+                </div>
+
+                <div class="main_menu">
+                    <ul class="main_list">
+                        <li><a href="https://www.dyson.com/deals">Deals</a></li>
+                        <li>
+                            <a href="#">Shop<img src="down.png" name="Shop"></a>
+                            <!-- <div class="sub-menu-contanier"> -->
+                                <div class="column">
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="sub-menu">
+                                                <ul>
+                                                    <li><a href="#"><img src="fc-category-nav-2021-O2.jpg"></a></li>
+                                                    <li>Vacuum cleaners</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Cordless stick vacuums</li>
+                                                    <li>Upright vacuums</li>
+                                                    <li>Canister vacuums</li>
+                                                    <li>Hardwood floor vacuums</li>
+                                                    <li>Vacuum stands, fools and accessories</li>
+                                                    <li>Help me choose</li>
+                                                    <li>Shop all vacuums</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </li>
+                        <li>
+                            <a href="#">For business<img src="down.png" name="For business"></a>
+                            <!-- <div class="mega-menu">
+                                <ul>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                    <li><a href="#">MENU2</a></li>
+                                </ul>
+                            </div> -->
+                        </li>
+
+                        <li><a href="https://www.dyson.com/support">Support</a></li>
+                        <li><a href="https://www.dyson.com/your-dyson">My Dyson</a></li>
+                        <li><a href="https://www.dyson.com/dyson-live">Dyson Live</a></li>
+                    </ul>
+                </div>
+
+                <div class="row search">
+                    <a href="#"><input type="button" class="search_btn"
+                            value="Search products and parts              "></a>
+                    <img src="search.png" style="height: 20px; width: 20px;">
+                </div>
+                <div>
+                    <a href="https://www.dyson.com/basket"><img src="basket.PNG" style="height: 20px; width: 20px;"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+
+        </article>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

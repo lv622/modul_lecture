@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .board-table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .board-table th {
+            background: #eee;
+            border-top: 2px solid gray;
+            padding: 5px;
+            width: 50px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .board-table th:nth-child(2) {
+            width: 600px;
+        }
+
+        .board-table td {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .board-table td:nth-child(1) {
+            width: 180px;
+            text-align: center;
+            border-right: 1px solid #ccc;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .board-table td:nth-child(2) {
+            padding: 10px 10px 10px 15px;
+        }
+
+        .namebox {
+            width: 100px;
+            border: 1px solid #00ff0d;
+        }
+
+        .button {
+            float: right;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .button-gray {
+            border: 0px;
+            border-radius: 5px;
+            background-color: gray;
+            color: white;
+            font: 12px 굴림;
+            font-weight: bold;
+            width: 60px;
+            height: 30px;
+        }
+
+        .button-black {
+            border: 0px;
+            border-radius: 5px;
+            background-color: rgb(46, 46, 46);
+            color: white;
+            font: 12px 굴림;
+            font-weight: bold;
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div class="container">
+            <h2>게시판</h2>
+
+            <div>
+                <form action="post">
+                    <table class="board-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">글쓰기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>이름</td>
+                                <td><input type="text" class="namebox"></td>
+                            </tr>
+                            <tr>
+                                <td>제목</td>
+                                <td><input type="text" style="width: 600px"></td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                                <td><textarea name="w-content" id="" cols="84" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>업로드</td>
+                                <td>
+                                    <input type="text" id="text" name="text">
+                                    <input type="file" id="file" name="file">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="button">
+                        <span><input type="submit" class="button-black" value="완료"></span>
+                        <span><input type="button" class="button-gray" value="목록"
+                                onClick="self.location='20220518_board.html'"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
