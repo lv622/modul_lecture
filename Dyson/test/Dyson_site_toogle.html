@@ -12,6 +12,7 @@
 
 <body class="container">
     <header class="header">
+
         <nav class="sub_nav">
             <a href="https://www.dyson.com/demo-stores">find a store</a>
             <a href="https://www.dyson.com/newsroom">Newsroom</a>
@@ -29,7 +30,7 @@
                 <div class="main_menu">
                     <ul class="main_list">
                         <li><a href="#">Deals</a></li>
-                        <li><a><label for="Shop_menu" style="cursor: pointer;">Shop<img src="imgs/down.png"
+                        <li><a><label for="shop_menu" style="cursor: pointer;">Shop<img src="imgs/down.png"
                                         name="Shop"></label></a></li>
                         <li><a><label for="for_menu" style="cursor: pointer;">For business<img src="imgs/down.png"
                                         name="forbusiness"></label></a></li>
@@ -40,16 +41,20 @@
                 </div>
 
                 <div class="row search">
-                    <a href="#"><input type="button" class="search_btn"
+                    <label for="close_btn" >
+                        <input type="checkbox" class="close-checkbox" id="close_btn">
+                        <a href="#"><input type="button" class="search_btn"
                             value="Search products and parts              "></a>
-                    <img src="imgs/search.png" style="height: 20px; width: 20px;">
+                        <img src="imgs/search.png" style="height: 20px; width: 20px;">
+                    </label>
                 </div>
                 <div>
                     <a href="https://www.dyson.com/basket"><img src="imgs/basket.PNG"
                             style="height: 20px; width: 20px;"></a>
                 </div>
             </div>
-            <input type="checkbox" class="list-checkbox" id="Shop_menu">
+
+            <input type="checkbox" class="list-checkbox" id="shop_menu">
 
             <div class="sub_menu">
                 <div class="column">
@@ -262,6 +267,49 @@
                                     <li><a href="#">Commercial desk lamp</a></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" class="list-checkbox" id="ex_menu">
+
+
+            <input type="checkbox" class="close-checkbox" id="close_btn">
+
+            <div class="search_contanier">
+                <div class="close">
+                    <label for="close_btn" style="cursor:pointer;"><img src="/Dyson/imgs/close.png"></label>
+                </div>
+
+                <div class="search_menu">
+                    <div class="column">
+                        <div>
+                            <form action="">
+                                <label>
+                                    <h2>Search products or support information</h2>
+                                </label>
+    
+                                <div class="row">
+                                    <input type="text" class="search_box"
+                                        placeholder="Type here to seach products or support information">
+                                    <img src="/Dyson/imgs/search.png" style="width: 40px; height: 40px;">
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <h2>Most searched for</h2>
+    
+                            <ul>
+                                <li><button>Outsize</button></li>
+                                <li><button>V8 Absolute</button></li>
+                                <li><button>Supersonic</button></li>
+                                <li><button>Corrale</button></li>
+                                <li><button>Air purifiers</button></li>
+                                <li><button>Spare parts</button></li>
+                                <li><button>Replacement battery</button></li>
+                                <li><button>Register warranty</button></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
