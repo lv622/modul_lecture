@@ -1,3 +1,5 @@
+package programers;
+
 import java.util.Scanner;
 
 public class hello {
@@ -6,16 +8,16 @@ public class hello {
         Scanner scanner = new Scanner(System.in);
 
         String name = scanner.next();
-        System.out.println("이름은 " + name + ", ");
+        System.out.print("이름은 " + name + ", ");
 
         String city = scanner.next();
-        System.out.println("도시는 " + city + ", ");
+        System.out.print("도시는 " + city + ", ");
 
         int age = scanner.nextInt();
-        System.out.println("나이는 " + age + ", ");
+        System.out.print("나이는 " + age + ", ");
 
         double weight = scanner.nextDouble();
-        System.out.println("체중은 " + weight + ", ");
+        System.out.print("체중은 " + weight + ", ");
 
         boolean isSingle = scanner.nextBoolean();
         System.out.println("독신 여부는 " + isSingle + "입니다.");
